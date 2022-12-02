@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="JavaScript/Poker_Simulator_정재하.js"></script>
+    <meta charset="utf-8">
+    <title>Poker Simulator</title> 
+    <link href="Css/Poker_Simulator_Css_정재하.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+ <header>
+    <button onclick="location.href='Poker_Main_정재하.html'"><h2>메인 화면으로</h2></button>
+    <h1>Poker Simulator</h1>
+ </header>
+ <section>
+    <fieldset>
+        <legend><b>Poker Simulator</b></legend>
+        <h3 id="id_out"></h3>
+    </fieldset>
+    <br><from>
+    <input type="button" value="시뮬레이션" id="id_btn"> <h2 style="text-shadow:1px 1px 10px white; color:black"> &nbsp&nbsp < 카드 7장 중에 5장을 선택하여 족보를 완성하는 Seven Poker Simulator ></h2>
+</from><br><br>
+    <table style="border:2px solid white"
+    width="100%"
+    height="75%"
+    cellspacing="5">
+        <tr>
+            <th>Rank</th>
+            <th>족보 이름</th>
+            <th>기록 횟수</th>
+            <th>기록 확률(%)</th>
+            <th>실제 확률(%)</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>Royal Straight Flush, 로열 스트레이트 플러쉬</th>
+            <th id="d1"></th>
+            <th id="r1"></th>
+            <th>0.0032</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>Back Straight Flush, 백 스트레이트 플러쉬</td>>
+            <th id="d2"></th>
+            <th id="r2"></th>
+            <th>0.0032</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Straight Flush, 스트레이트 플러쉬</th>
+            <th id="d3"></th>
+            <th id="r3"></th>
+            <th>0.0247</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>Four of a Kind, 포 카드</th>
+            <th id="d4"></th>
+            <th id="r4"></th>
+            <th>0.1683</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>Full House, 풀 하우스</th>
+            <th id="d5"></th>
+            <th id="r5"></th>
+            <th>2.6094</th>
+        </tr>
+        <tr>
+            <th>6</th>
+            <th>Flush, 플러쉬</th>
+            <th id="d6"></th>
+            <th id="r6"></th>
+            <th>3.0329</th>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>Mountain, 마운틴</th>
+            <th id="d7"></th>
+            <th id="r7"></th>
+            <th>0.4590</th>
+        </tr>
+        <tr>
+            <th>8</th>
+            <th>Back Straight, 백 스트레이트</th>
+            <th id="d8"></th>
+            <th id="r8"></th>
+            <th>0.4590</th>
+        </tr>
+        <tr>
+            <th>9</th>
+            <th>Straight, 스트레이트</th>
+            <th id="d9"></th>
+            <th id="r9"></th>
+            <th>4.5518</th>
+        </tr>
+        <tr>
+            <th>10</th>
+            <th>Triple, 트리플</th>
+            <th id="d10"></th>
+            <th id="r10"></th>
+            <th>4.8392</th>
+        </tr>
+        <tr>
+            <th>11</th>
+            <th>Two Pair, 투페어</th>
+            <th id="d11"></th>
+            <th id="r11"></th>
+            <th>23.5179</th>
+        </tr>
+        <tr>
+            <th>12</th>
+            <th>One Pair, 원페어</th>
+            <th id="d12"></th>
+            <th id="r12"></th>
+            <th>43.8039</th>
+        </tr>
+        <tr>
+            <th>13</th>
+            <th>No Pair, 탑</th>
+            <th id="d13"></th>
+            <th id="r13"></th>
+            <th>17.4972</th>
+        </tr>
+
+    </table>
+ </section>
+ <footer>
+    <br><audio src="Audio/main_bgm.mp3" controls roop autoplay></audio>
+    <h4> &nbsp;&nbsp;bgm : Lost Ark Official Soundtrack / Mischief Pages of Saton</h4>
+ </footer>
+</body>
+<html>
+    

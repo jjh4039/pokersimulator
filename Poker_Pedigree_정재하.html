@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Poker Pedigree</title> 
+    <link href="Css/Poker_Pedigree_Css_정재하.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+ <header>
+    <button onclick="location.href='Poker_Main_정재하.html'"><h2>메인 화면으로</h2></button>
+    <h1>Poker Pedigree</h1>
+ </header>
+ <section>
+    <table  
+            style="border:2px solid white"
+            width="100%"
+            height="200px"
+            cellspacing="5">
+            <thead>
+                <tr align="center" bgcolor="white">
+                    <td width="5%"><h4>Rank</h4></td>
+                    <th width="60%"><h4>족보 내용</h4></th>
+                    <th width="18%"><h4>5장 족보 완성 확률</h4></th>
+                    <th width="17%"><h4>7장 족보 완성 확률</h4></th>
+                </tr>
+            </thead>
+            <tbody class="aaa">
+                <!-- 로티플 -->
+                <tr align="center" bgcolor="white">
+                    <th style="font-size:50px" rowspan="2">1</td>
+                    <td><img src=Card_image/S10.png> <img src=Card_image/SJ.png> <img src=Card_image/SQ.png> <img src=Card_image/SK.png> <img src=Card_image/SA.png><br><h4>Royal Straight Flush, 로열 스트레이트 플러쉬</h4></td>
+                    <td><h4>649,740 : 1</h4></td>
+                    <td><h4>30,939 : 1</h4></td>
+                </tr>
+
+                <tr align="center" bgcolor="white">
+                  <th><h4>가장 높은 족보, 10, J, Q, K, A를 모두 같은 무늬로 모은 경우</h4></td>
+                  <th><h4>0.00015%</h4></td>
+                  <th><h4>0.0032%</h4></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <!-- 백스플 -->
+                <tr align="center" bgcolor="white">
+                    <th style="font-size:50px" rowspan="2">2</td>
+                    <td><img src=Card_image/DA.png> <img src=Card_image/D2.png> <img src=Card_image/D3.png> <img src=Card_image/D4.png> <img src=Card_image/D5.png><br><h4>Back Straight Flush, 백 스트레이트 플러쉬</h4></td>
+                    <td><h4>649,740 : 1</h4></td>
+                    <td><h4>30,939 : 1</h4></td>
+                </tr>
+
+                <tr align="center" bgcolor="white">
+                  <th><h4>A, 2, 3, 4, 5를 모두 같은 무늬로 모은 경우</h4></td>
+                  <th><h4>0.00015%</h4></td>
+                  <th><h4>0.0032%</h4></td>
+                </tr>
+              </tbody>
+                <!-- 스티플 -->
+                <tr align="center" bgcolor="white">
+                    <th style="font-size:50px" rowspan="2">3</td>
+                    <td><img src=Card_image/Q5.png> <img src=Card_image/Q6.png> <img src=Card_image/Q7.png> <img src=Card_image/Q8.png> <img src=Card_image/Q9.png><br><h4>Straight Flush, 스트레이트 플러쉬</h4></td>
+                    <td><h4>29,411 : 1</h4></td>
+                    <td><h4>3,589 : 1</h4></td>
+                </tr>
+
+                <tr align="center" bgcolor="white">
+                  <th><h4>연속되는 숫자를 모두 같은 무늬로 모은 경우</h4></td>
+                  <th><h4>0.0034%</h4></td>
+                  <th><h4>0.0311%</h4></td>
+                </tr>
+
+                <!-- 포카드 -->
+                <tr align="center" bgcolor="white">
+                    <th style="font-size:50px" rowspan="2">4</td>
+                    <td><img src=Card_image/S7.png> <img src=Card_image/D7.png> <img src=Card_image/H7.png> <img src=Card_image/Q7.png> <img src=Card_image/S3.png><br><h4>Four of a Kind, 포 카드</h4></td>
+                    <td><h4>4,166 : 1</h4></td>
+                    <td><h4>594 : 1</h4></td>
+                </tr>
+
+                <tr align="center" bgcolor="white">
+                  <th><h4>숫자가 같은 카드 4장을 모은 경우</h4></td>
+                  <th><h4>0.024%</h4></td>
+                  <th><h4>0.199%</h4></td>
+                </tr>
+
+                <!-- 풀하우스 -->
+                <tr align="center" bgcolor="white">
+                    <th style="font-size:50px" rowspan="2">5</td>
+                    <td><img src=Card_image/Q5.png> <img src=Card_image/H5.png> <img src=Card_image/S5.png> <img src=Card_image/Q2.png> <img src=Card_image/S2.png><br><h4>Full House, 풀 하우스</h4></td>
+                    <td><h4>714 : 1</h4></td>
+                    <td><h4>38 : 1</h4></td>
+                </tr>
+
+                <tr align="center" bgcolor="white">
+                  <th><h4>숫자가 같은 카드 3장 + 같은 카드 2장을 모은 경우</h4></td>
+                  <th><h4>0.1441%</h4></td>
+                  <th><h4>2.80%</h4></td>
+                </tr>
+
+                <!-- 플러쉬 -->
+                <tr align="center" bgcolor="white">
+                    <th style="font-size:50px" rowspan="2">6</td>
+                    <td><img src=Card_image/S7.png> <img src=Card_image/S2.png> <img src=Card_image/S10.png> <img src=Card_image/SQ.png> <img src=Card_image/S5.png><br><h4>Flush, 플러쉬</h4></td>
+                    <td><h4>526 : 1</h4></td>
+                    <td><h4>33 : 1</h4></td>
+                </tr>
+
+                <tr align="center" bgcolor="white">
+                  <th><h4>무늬가 같은 카드 5장을 모은 경우</h4></td>
+                  <th><h4>0.1965%</h4></td>
+                  <th><h4>3.03%</h4></td>
+                </tr>
+
+                <!-- 마운틴 -->
+                <tr align="center" bgcolor="white">
+                    <th style="font-size:50px" rowspan="2">7</td>
+                    <td><img src=Card_image/DA.png> <img src=Card_image/QK.png> <img src=Card_image/HQ.png> <img src=Card_image/HJ.png> <img src=Card_image/S10.png><br><h4>Mountain, 마운틴</h4></td>
+                    <td><h4>4,525 : 1</h4></td>
+                    <td><h4>222 : 1</h4></td>
+                </tr>
+
+                <tr align="center" bgcolor="white">
+                  <th><h4>A, K, Q, J, 10를 모은 경우</h4></td>
+                  <th><h4>0.022%</h4></td>
+                  <th><h4>0.45%</h4></td>
+                </tr>
+
+                <!-- 백스트 -->
+                <tr align="center" bgcolor="white">
+                  <th style="font-size:50px" rowspan="2">8</td>
+                  <td><img src=Card_image/QA.png> <img src=Card_image/H2.png> <img src=Card_image/D3.png> <img src=Card_image/H4.png> <img src=Card_image/S5.png><br><h4>Back Straight, 백 스트레이트</h4></td>
+                  <td><h4>4,525 : 1</h4></td>
+                  <td><h4>222 : 1</h4></td>
+              </tr>
+
+              <tr align="center" bgcolor="white">
+                <th><h4>A, 2, 3, 4, 5를 모은 경우</h4></td>
+                <th><h4>0.022%</h4></td>
+                <th><h4>0.45%</h4></td>
+              </tr>
+
+                <!-- 스트 -->
+                <tr align="center" bgcolor="white">
+                  <th style="font-size:50px" rowspan="2">9</td>
+                  <td><img src=Card_image/D5.png> <img src=Card_image/H6.png> <img src=Card_image/H7.png> <img src=Card_image/Q8.png> <img src=Card_image/S9.png><br><h4>Straight, 스트레이트</h4></td>
+                  <td><h4>256 : 1</h4></td>
+                  <td><h4>23 : 1</h4></td>
+              </tr>
+
+              <tr align="center" bgcolor="white">
+                <th><h4>연속되는 숫자 5장을 모은 경우</h4></td>
+                <th><h4>0.3925%</h4></td>
+                <th><h4>4.55%</h4></td>
+              </tr>
+
+                <!-- 트리플 -->
+                <tr align="center" bgcolor="white">
+                  <th style="font-size:50px" rowspan="2">10</td>
+                  <td><img src=Card_image/H7.png> <img src=Card_image/D7.png> <img src=Card_image/S7.png> <img src=Card_image/SK.png> <img src=Card_image/HA.png><br><h4>Triple, 트리플</h4></td>
+                  <td><h4>46 : 1</h4></td>
+                  <td><h4>21 : 1</h4></td>
+              </tr>
+
+              <tr align="center" bgcolor="white">
+                <th><h4>숫자가 같은 카드 3장을 모은 경우</h4></td>
+                <th><h4>2.11%</h4></td>
+                <th><h4>4.83%</h4></td>
+              </tr>
+
+                <!-- 투페 -->
+                <tr align="center" bgcolor="white">
+                  <th style="font-size:50px" rowspan="2">11</td>
+                  <td><img src=Card_image/D2.png> <img src=Card_image/H2.png> <img src=Card_image/Q4.png> <img src=Card_image/H4.png> <img src=Card_image/SQ.png><br><h4>Two Pair, 투페어</h4></td>
+                  <td><h4>22 : 1</h4></td>
+                  <td><h4>4.5 : 1</h4></td>
+              </tr>
+
+              <tr align="center" bgcolor="white">
+                <th><h4>숫자가 같은 카드 2장을 2세트 모은 경우</h4></td>
+                <th><h4>4.75%</h4></td>
+                <th><h4>23.5%</h4></td>
+              </tr> 
+
+              <!-- 원페 -->
+                <tr align="center" bgcolor="white">
+                  <th style="font-size:50px" rowspan="2">12</td>
+                  <td><img src=Card_image/QK.png> <img src=Card_image/SK.png> <img src=Card_image/DJ.png> <img src=Card_image/S10.png> <img src=Card_image/H5.png><br><h4>One Pair, 원페어</h4></td>
+                  <td><h4>2.3 : 1</h4></td>
+                  <td><h4>2.5 : 1</h4></td>
+              </tr>
+
+              <tr align="center" bgcolor="white">
+                <th><h4>숫자가 같은 카드 1장을 모은 경우</h4></td>
+                <th><h4>42.2%</h4></td>
+                <th><h4>43.8%</h4></td>
+              </tr>
+
+              <!-- 탑 -->
+                <tr align="center" bgcolor="white">
+                  <th style="font-size:50px" rowspan="2">13</td>
+                  <td><img src=Card_image/D7.png> <img src=Card_image/SA.png> <img src=Card_image/H3.png> <img src=Card_image/SQ.png> <img src=Card_image/QJ.png><br><h4>No Pair, 탑</h4></td>
+                  <td><h4>2 : 1</h4></td>
+                  <td><h4>6 : 1</h4></td>
+              </tr>
+
+              <tr align="center" bgcolor="white">
+                <th><h4>노 페어, 숫자가 가장 높은 1장</h4></td>
+                <th><h4>50.9%</h4></td>
+                <th><h4>17.4%</h4></td>
+              </tr>
+            </tbody>
+        </table>
+ </section>
+ <footer>       <br><audio src="Audio/main_bgm.mp3" controls roop autoplay></audio>
+  <h4> &nbsp;&nbsp;bgm : Lost Ark Official Soundtrack / Mischief Pages of Saton</h4></footer>
+ </footer>
+</body>
+<html>
+    
